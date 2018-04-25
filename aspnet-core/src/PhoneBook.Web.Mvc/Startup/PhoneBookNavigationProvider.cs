@@ -44,6 +44,13 @@ namespace PhoneBook.Web.Startup
                         icon: "local_offer",
                         requiredPermissionName: PermissionNames.Pages_Roles
                     )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.Persons,
+                        L("Persons"),
+                        url: "Persons",
+                        icon: "local_offer"
+                        )
                 )
                 .AddItem(
                     new MenuItemDefinition(

@@ -7,7 +7,7 @@ using PhoneBook.PhoneBooks.Persons;
 
 namespace PhoneBook.PhoneBooks.Dto
 {
-    [AutoMapFrom(typeof(PagedResultDto))]
+    [AutoMapFrom(typeof(Person))]
     public class PersonListDto:FullAuditedEntityDto
     {
         /// <summary>

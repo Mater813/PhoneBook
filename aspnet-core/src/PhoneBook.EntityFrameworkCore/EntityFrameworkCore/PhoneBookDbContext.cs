@@ -17,13 +17,13 @@ namespace PhoneBook.EntityFrameworkCore
         {
         }
 
-        public DbSet<PagedResultDto> Persons { get; set; }
+        public DbSet<Person> Persons { get; set; }
 
         public DbSet<PhoneNumber> PhoneNumbers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<PagedResultDto>().ToTable("AbpPerson");
+            modelBuilder.Entity<Person>().ToTable("AbpPerson");
             modelBuilder.Entity<PhoneNumber>().ToTable("AbpPhoneNumber");
             base.OnModelCreating(modelBuilder);
         }

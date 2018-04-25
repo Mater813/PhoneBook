@@ -9,10 +9,10 @@ namespace PhoneBook.Dto
     public class PageAndSortedInputDto : IPagedResultRequest, ISortedResultRequest
     {
         public string Sorting { get; set; }
-        [Range(1,int.MaxValue)]
+        [Range(0, int.MaxValue)]
         public int SkipCount { get; set; }
-        [Range(1,500)]
+        [Range(1, 500)]
         public int MaxResultCount { get; set; }
-        
+
     }
 }

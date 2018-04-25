@@ -24,7 +24,7 @@ namespace PhoneBook.PhoneBooks.PhoneNumbers
 
         public int PersonId { get; set; } 
 
-        public PagedResultDto Person { get; set; }
+        public Person Person { get; set; }
         /// <summary>
         /// 创建时间
         /// </summary>

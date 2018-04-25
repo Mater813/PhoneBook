@@ -9,7 +9,7 @@ namespace PhoneBook.PhoneBooks.Persons
     /// <summary>
     /// 人员
     /// </summary>
-    public class PagedResultDto:FullAuditedEntity
+    public class Person:FullAuditedEntity
     {
         /// <summary>
         /// 姓名

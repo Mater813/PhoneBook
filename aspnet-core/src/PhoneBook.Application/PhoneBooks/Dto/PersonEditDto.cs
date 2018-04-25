@@ -7,6 +7,8 @@ namespace PhoneBook.PhoneBooks.Dto
 {
     public class PersonEditDto
     {
+
+        public int? Id { get; set; }
         /// <summary>
         /// 姓名
         /// </summary>

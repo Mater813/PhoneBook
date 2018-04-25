@@ -11,24 +11,31 @@ namespace PhoneBook.PhoneBooks
 {
     public  interface IPersonAppServer: IApplicationService
     {
+        /// <summary>
+        /// 获取联系人的相关信息,支持分页
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         Task<PagedResultDto<PersonListDto>> GetPagedPersonAsync(GetPersonInput input);
 
         /// <summary>
-        /// 根据id获取相关用户信息
+        /// 根据id获取相关联系人信息
         /// </summary>
         /// <returns></returns>
-        Task<PersonListDto> GetPersonByIdAsync();
+        Task<PersonListDto> GetPersonByIdAsync(NullableIdDto input);
 
         /// <summary>
-        /// 新增或修改用户信息
+        /// 新增或更改联系人信息
         /// </summary>
         /// <returns></returns>
-        Task CreateOrUpdatePersonAsync();
+        Task CreateOrUpdatePersonAsync(CreateOrUpdatePersonInput input);
 
         /// <summary>
-        /// 删除用户信息
+        /// 删除联系人信息
         /// </summary>
         /// <returns></returns>
-        Task DeletePersonAsync();
+        Task DeletePersonAsync(EntityDto input);
+
+        
     }
 }
